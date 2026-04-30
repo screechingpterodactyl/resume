@@ -28,6 +28,28 @@
 </header>
 <img src="playwell.svg" width="1000px" class="border">
 <footer>
+  <button id="changeBg">Change Background</button>
+
+  <script>
+    const bg = ["city.jpg", "funkyshapes.jpg", "monterey.jpg"];
+
+  let bgIndex = 0;
+
+  const savedIndex = localStorage.getItem("bgIndex");
+  if (savedIndex !== null) {
+    bgIndex = parseInt(savedIndex, 10);}
+
+  document.body.style.backgroundImage = `url(${bg[bgIndex]})`;
+
+  document.getElementById("changeBg").addEventListener("click", () => {
+    bgIndex = (bgIndex + 1) % bg.length;
+
+    document.body.style.backgroundImage = `url(${bg[bgIndex]})`;
+
+    localStorage.setItem("bgIndex", bgIndex);});
+  </script>
+  <br>
+  <br>
   <em>Designed by Devon Bazemore ©2026 Pterrible ideas Ltd.</em>
 </footer>
 </body>
