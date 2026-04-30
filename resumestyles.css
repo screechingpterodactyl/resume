@@ -1,0 +1,106 @@
+@import url(https://fonts.googleapis.com/css2?family=Federo&display=swap);
+body{
+  background: #00003A url(funkyshapes.jpg) no-repeat center fixed;
+  -webkit-text-fill-color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  background-size: 1900px;
+  background-position-y: 0px;
+  transition: ease-in-out 200ms;}
+
+header{
+  margin-top: 0;
+  padding: 1em 29em;
+  text-align: center;
+  border-radius: 20px;
+  line-height: 28px;}
+
+h1{
+  font: bold 3em "Federo", "Trebuchet MS", sans-serif;
+  text-align: center;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-top: 30px;}
+
+h2{font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.3em;
+    -webkit-text-fill-color: #baa5fc;}
+
+h3{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; -webkit-text-fill-color: #baa5fc;}
+
+footer{
+  padding-bottom: 0.01em;
+  text-align: center;
+  border-radius: 20px;
+  padding-top: 4em;
+  padding-bottom: 0.5em;
+  align-items: center;
+  align-content: center;}
+
+footer img{
+  width: 40px;
+  height: 40px;
+  margin-left: .5em;
+  margin-right: .5em;} 
+
+ul{list-style-type: circle;}
+
+li::marker{color: white;}
+
+.border{
+  border-radius: 15px;
+  border-style: solid;
+  border-color: #baa5fc;
+  border-width: 5px;}
+
+table, td, th {align-self: center; align-items: center; align-content: center; text-align: center;}
+
+.center{
+  margin-left: auto;
+  margin-right: auto;}
+
+.nav-container{
+  display: flex;
+  justify-content: center;
+  gap: 20px;}
+
+.nav-container a{
+  text-align: center;
+  text-decoration: none;}
+
+.nav{
+  display: block;
+  width: 40px;
+  margin: 0 auto;}
+
+.lists{
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  text-align: left;}
+
+.container{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-align: left;}
+
+a{color: rgb(255, 255, 255); text-decoration: none;}
+a:hover {background-color: #baa5fc; -webkit-text-fill-color: black;}
+a:focus {background-color: #baa5fc;}
+
+button{
+  background-color: #5c3787;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  width: 200px;
+  font-family: inherit;
+  font-size: 1.1em;}
+
+button:hover{
+  background-color: #8e39ec;
+  font-family: inherit;}
+
+::selection{color: #000000; background-color: #baa5fc;}
