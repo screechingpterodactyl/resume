@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>resume</title>
+<link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="resumestyles.css">
+</head>
+<body>
+
+<header>
+  <h1>Devon Bazemore</h1>
+  <a href="https://www.youtube.com/@screechingpterodactyl/" target="_blank"><img src="icons/youtube-icon.svg" alt="youtube" width="50" height="35"></a>
+  <a href="https://www.instagram.com/screechingpterodactyl19/" target="_blank"><img src="icons/instagram.png" alt="instagram" width="50" height="50"></a>
+  <br>
+  <br>
+  <h2>about</h2>
+  <div class="container">
+  <a href="bonus.html"><img id="myImage" src="drive.jpg" width="150px" class="border"></a>
+  <script>
+      const images = ["drive.jpg", "grad.jpg", "homie.jpg", "lime.jpg", "mouse.jpg", "pincus.jpg", "trek.jpg"];
+      let currentIndex = 0;
+
+      function changeImage() {
+          const imgElement = document.getElementById("myImage");
+          
+          currentIndex = (currentIndex + 1) % images.length;
+            
+          imgElement.src = images[currentIndex];}
+
+        setInterval(changeImage, 3000);
+    </script>
+
+  <p>Welcome! I'm Devon Bazemore and this is my resume page with some samples of my work.
+    I was born and raised in Altamonte Springs, Florida, where I still live today. I graduated magna cum laude from Lake Brantley High School in 2023.
+    I have earned three certifications in Microsoft Office and four in Adobe products.
+    I have finished my A.A. degree at Seminole State College, where I earned an additional technical certification in Digital Media Design, and am currently pursuing a B.A. degree in Digital Design at UCF. I am hoping to make use of the skills I have learned as part of my ongoing education.</p>
+</div>
+</header>
+<br>
+<div class="lists">
+  <div>
+    <h2>skills</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Video Editing/Production</li>
+      <li>Graphic Design</li>
+      <li>Social Media Design</li>
+    </ul>
+  </div>
+
+  <div>
+    <h2>software</h2>
+    <ul>
+      <li>Adobe Premiere Pro</li>
+      <li>Adobe Photoshop</li>
+      <li>Adobe InDesign</li>
+      <li>Adobe Illustrator</li>
+      <li>Adobe After Effects</li>
+      <li>VSCode</li>
+    </ul>
+  </div>
+</div>
+<br>
+  <h2>work samples</h2>
+<table class="center">
+<tr>
+    <td><a href="videos.html"><img src="aaaaaaaaaaaa_thumb.png" width="200" class="border"></a><br><a href="videos.html">Videos</a></td>
+    <td><a href="artwork.html"><img src="Fishoe_thumb.png" width="200" class="border"></a><br><a href="artwork.html">Artwork</a></td>
+    <td><a href="sites.html"><img src="blackgoose_thumb.png" width="200" class="border"></a><br><a href="sites.html">Sites</a></td>
+</tr>
+</table>
+<br>
+<footer>
+  <em>Designed by Devon Bazemore ©2026 Pterrible ideas Ltd.</em>
+</footer>
+</body>
+</html>
